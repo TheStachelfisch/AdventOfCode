@@ -1,13 +1,11 @@
-﻿using System.Drawing;
-
-namespace Day2.Tokenizer
+﻿namespace Day2.Tokenizer
 {
     public class Token
     {
-        public Range Range;
-        public char Character;
-        public string Value;
-        
+        public readonly char Character;
+        public readonly Range Range;
+        public readonly string Value;
+
         public Token(Range range, char character, string value)
         {
             Range = range;
